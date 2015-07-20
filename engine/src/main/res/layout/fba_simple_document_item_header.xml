@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/simpleListHeaderStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="0dp" >
+
+    <TextView
+        android:layout_width="@dimen/fba_list_checkbox_width"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="fill_parent"
+        android:background="?attr/verticalListDividerDrawable" />
+
+    <TextView
+        style="@style/SimpleListHeaderView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:paddingLeft="@dimen/fba_list_item_devider"
+        android:text="@string/fba_meta_date" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="fill_parent"
+        android:background="?attr/verticalListDividerDrawable" />
+
+    <TextView
+        style="@style/SimpleListHeaderView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:paddingLeft="@dimen/fba_list_item_devider"
+        android:text="@string/fba_meta_number" />
+
+</LinearLayout>

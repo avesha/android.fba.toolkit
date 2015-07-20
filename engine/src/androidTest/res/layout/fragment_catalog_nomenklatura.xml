@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.profi1c.engine.widget.ObjectView
+    android:id="@id/fba_object_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fba_base_hspacing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ru.profi1c.engine.widget.FieldEditText
+            android:id="@id/fba_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"/>
+
+        <ru.profi1c.engine.widget.FieldEditText
+            android:id="@+id/fba_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fba_code"
+            android:ems="10">
+
+            <requestFocus/>
+        </ru.profi1c.engine.widget.FieldEditText>
+
+        <ru.profi1c.engine.widget.FieldPresentationSpinner
+            android:id="@+id/spinStatyaZatrat"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fba_description"
+            android:layout_marginTop="16dp"
+            android:minHeight="36dp"
+            android:spinnerMode="dialog"/>
+
+        <ru.profi1c.engine.widget.FieldPresentationSpinner
+            android:id="@+id/spinStavkaNds"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="36dp"
+            android:spinnerMode="dialog"/>
+
+        <ru.profi1c.engine.widget.FieldCheckBox
+            android:id="@+id/cbUsluga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <ru.profi1c.engine.widget.FieldPresentationSpinner
+            android:id="@+id/spinStrana"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="36dp"/>
+
+        <ru.profi1c.engine.widget.FieldSwitch
+            android:id="@+id/switchUchetToHarakteristam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"/>
+
+        <ru.profi1c.engine.widget.FieldSwitch
+            android:id="@+id/switchUchetToSeriyam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+
+</ru.profi1c.engine.widget.ObjectView>

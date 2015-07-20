@@ -1,0 +1,37 @@
+[
+{
+"ref":"bd72d900-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"000000001",
+"description":"Торговый дом \"Комплексный\" ",
+"owner":null,
+"level":0,
+"parent":null,
+"folder":false
+}
+,
+{
+"ref":"14ed8b83-55bd-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"000000002",
+"description":"ИЧП \"Предприниматель\"",
+"owner":null,
+"level":0,
+"parent":null,
+"folder":false
+}
+,
+{
+"ref":"ef8f948c-8403-11da-9ae9-000d884f5d77",
+"deletionMark":false,
+"predefined":false,
+"code":"000000003",
+"description":"Cтройснаб",
+"owner":null,
+"level":0,
+"parent":null,
+"folder":false
+}
+]

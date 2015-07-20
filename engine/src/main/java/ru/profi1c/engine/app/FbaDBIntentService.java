@@ -1,0 +1,55 @@
+package ru.profi1c.engine.app;
+
+import com.j256.ormlite.support.ConnectionSource;
+
+import ru.profi1c.engine.meta.DBOpenHelper;
+
+/**
+ * Базовый класс для использования служб c доступом к базе данных. Вы можете
+ * просто вызвать {@link #getHelper()}, чтобы получить ваш класс помощника, или
+ * {@link #getConnectionSource()}, чтобы получить {@link ConnectionSource}.
+ */
+public abstract class FbaDBIntentService extends FbaIntentService {
+
+    private volatile FbaDBHelperWrapper mDBHelperWrapper;
+
+    public FbaDBIntentService(String name) {
+        super(name);
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        mDBHelperWrapper = new FbaDBHelperWrapper(getApplicationContext());
+        mDBHelperWrapper.onCreate();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mDBHelperWrapper.onDestroy();
+    }
+
+    /**
+     * Get a helper for this action.
+     */
+    public DBOpenHelper getHelper() {
+        if (mDBHelperWrapper == null) {
+            throw new IllegalStateException(
+                    "DBOpenHelper was not available, because the event 'onCreate()' has not yet arrived!");
+        }
+        return mDBHelperWrapper.getHelper();
+    }
+
+    /**
+     * Get a connection source for this action.
+     */
+    public ConnectionSource getConnectionSource() {
+        if (mDBHelperWrapper == null) {
+            throw new IllegalStateException(
+                    "DBOpenHelper was not available, because the event 'onCreate()' has not yet arrived!");
+        }
+        return mDBHelperWrapper.getConnectionSource();
+    }
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/fba_image_content_description"
+        android:visibility="visible" />
+
+    <CheckedTextView
+        android:id="@android:id/text1"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@android:id/icon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textAlignment="center" />
+
+</RelativeLayout>

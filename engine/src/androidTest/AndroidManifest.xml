@@ -1,0 +1,44 @@
+<manifest package="com.sample.app2"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name="App"
+        android:description="@string/app_descr"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sample.app2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".test_action.TestActionProviderActivity"/>
+        <activity android:name="TAPresentationAdapter"/>
+        <activity android:name="TAMetaArrayAdapter"/>
+        <activity android:name="TAMetaCursorAdapter"/>
+        <activity android:name="TAMetaExpandableListAdapter"/>
+        <activity android:name="TAParentExpandableCursorAdapter"/>
+        <activity android:name="TASimpleHierarchyAdapter"/>
+        <activity android:name="TAHierarchyAdapter"/>
+        <activity android:name="TAFieldView"/>
+        <activity android:name="TAFieldView2"/>
+        <activity android:name="TAObjectView"/>
+        <activity android:name=".reports.TAReports" android:label="@string/title_reports"/>
+        <activity android:name="TASimpleKachestroListActivity"/>
+        <activity android:name="TASimpleSkuListActivity"/>
+        <activity android:name="TASimpleEdIzmListActivity"/>
+        <activity android:name="TASimpleDocumentVnutrenniiZakazListActivity"/>
+        <activity android:name="TASimpleDocumentVozvratTovarovOtPokupatelyaListActivity"/>
+        <activity android:name="TASimpleCatalogFragment"/>
+        <activity android:name="TASimpleDocumentFragment"/>
+        <activity android:name="TAMapsforgeRouteMap"/>
+
+    </application>
+
+
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.profi1c.engine.widget.ObjectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/fba_object_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/llDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right" >
+
+        <ru.profi1c.engine.widget.FieldDateView
+            android:id="@id/fba_data"
+            style="?android:attr/editTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:focusable="false"
+            android:gravity="right|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ru.profi1c.engine.widget.FieldTimeView
+            android:id="@id/fba_time"
+            style="?android:attr/editTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.3"
+            android:focusable="false"
+            android:gravity="right|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <ru.profi1c.engine.widget.FieldEditText
+        android:id="@+id/fba_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/llDate"
+        android:ems="10" >
+
+        <requestFocus />
+    </ru.profi1c.engine.widget.FieldEditText>
+
+</ru.profi1c.engine.widget.ObjectView>

@@ -1,0 +1,120 @@
+<resources>
+    <string name="fba_exchange_variant_init">"Начальная инициализация"</string>
+    <string name="fba_exchange_variant_full">"Полный"</string>
+    <string name="fba_exchange_variant_only_save">"Только сохранение данных"</string>
+    <string name="fba_exchange_variant_only_get">"Только получение данных"</string>
+
+    <string name="fba_not_set_autorize_params">"Не установлены параметры авторизации: имя пользователя, IP-адрес!"</string>
+    <string name="fba_ws_exception_timeout">"Удаленный сервер не отвечает или недоступен, проверьте параметры подключения!"</string>
+    <string name="fba_ws_exception_format_xml">"Ответа сервера не соответствует ожидаемому, ошибка: %s"</string>
+
+    <string name="fba_spinner_select_prompt">"Выбрать..."</string>
+    <string name="fba_progress_dlg_wait">@string/fba_wait</string>
+
+    <string name="fba_report_build">"Построение отчета"</string>
+    <string name="fba_file_not_found">"Файл не найден!"</string>
+
+	<string name="fba_toolkit_uses">"Используется 'FBA Toolkit', © 2012-2015 OOO Мобильные решения, www.profi1c.ru"</string>
+     <!-- Подождите -->
+    <string name="fba_wait">"Подождите…"</string>
+    <!-- Запуск обмена с сервисом -->
+    <string name="fba_exchange_start">"Запуск обмена с сервисом…"</string>
+    <!-- Обмен с сервером завершен успешно. -->
+    <string name="fba_exchange_success">"Обмен с сервером завершен успешно."</string>
+    <!-- Ошибка обмена с сервером! -->
+    <string name="fba_exchange_error">"Ошибка обмена с сервером!"</string>
+
+    <!-- Обмен с сервисом -->
+    <string name="fba_exchange_build">"Обмен с сервисом…"</string>
+    <!-- Авторизация пользователя -->
+    <string name="fba_user_authorization">"Авторизация пользователя"</string>
+    <!-- Отправка лога ошибок -->
+    <string name="fba_send_trace_log">"Отправка лога ошибок"</string>
+    <!-- Ошибка авторизации! Проверьте имя и пароль пользователя. -->
+    <string name="fba_user_authorization_error">"Ошибка авторизации! Проверьте имя и пароль пользователя."</string>
+    <!-- Проверка актуальности версии программы -->
+    <string name="fba_check_app_version">"Проверка актуальности версии программы"</string>
+    <!-- Получение новой версии программы -->
+    <string name="fba_get_app">"Получение новой версии программы"</string>
+    <!-- С сервера получена новая версия приложения. Необходимо выполнить обновление программы. -->
+    <string name="fba_get_app_success">"С сервера получена новая версия приложения. Необходимо выполнить обновление программы."</string>
+    <!-- Получение данных: %s.%s -->
+    <string name="fba_get_data" formatted="false">"Получение данных: %s.%s"</string>
+
+    <string name="fba_update_local_db">"Обновление локальной базы данных"</string>
+    <string name="fba_clear_local_db">"Очистка локальной базы данных"</string>
+    <string name="fba_update_table" formatted="false">"Обновление таблицы: %s.%s"</string>
+    <string name="fba_select_changes" formatted="false">"Выборка изменений: %s.%s"</string>
+
+    <!-- Уведомление сервера об успешности получения данных -->
+    <string name="fba_register_data_receipt">"Уведомление сервера об успешности получения данных"</string>
+    <!-- Сохранение данных: %s.%s -->
+    <string name="fba_write_data" formatted="false">"Сохранение данных: %s.%s"</string>
+    <!-- Получение необъектных данных -->
+    <string name="fba_get_other_data">"Получение необъектных данных"</string>
+    <!-- Сохранение необъектных данных -->
+    <string name="fba_write_other_data">"Сохранение необъектных данных"</string>
+    <string name="fba_error_msg_empty">"Нет информации об ошибке."</string>
+
+    <!-- simple_preference_values -->
+
+    <string name="fba_identification">Идентификация</string>
+    <string name="fba_select_user_name">Укажите имя используемое для входа в программу и при авторизации на сервере 1С</string>
+  	<string name="fba_user_name">Имя пользователя</string>
+    <string name="fba_password">Пароль</string>
+    <string name="fba_select_user_password">Укажите пароль также как он указан базе 1С для данного сотрудника</string>
+    <string name="fba_number_device">Номер устройства</string>
+    <string name="fba_exchange_to_server">Обмен данными</string>
+    <string name="fba_server_ip">Адрес сервера 1С</string>
+    <string name="fba_set_server_ip">Укажите ip-адрес web-сервиса</string>
+    <string name="fba_exchange_schedule">Планировщик заданий</string>
+  	<string name="fba_exchange_schedule_msg">Нажмите здесь для установки параметров автоматического обмена с сервером</string>
+    <string name="fba_enabled">Включено</string>
+  	<string name="fba_enable_exchange_schedule">Загружать данные согласно указанному расписанию</string>
+  	<string name="fba_time">Время</string>
+  	<string name="fba_days_of_week">Дни недели</string>
+  	<string name="fba_notification_sound">Звуки уведомлений</string>
+  	<string name="fba_mute">Без звука</string>
+ 	<string name="fba_notification_sound_new_app">Получено обновление программы</string>
+ 	<string name="fba_notification_sound_exchange_error">Ошибка обмена с сервером</string>
+ 	<string name="fba_notification_sound_exchange_sucsess">Обмен завершен успешно</string>
+    <string name="fba_feedback">Обратная связь</string>
+  	<string name="fba_about">О программе</string>
+ 	<string name="fba_email">Почта:</string>
+  	<string name="fba_tel">Телефон:</string>
+
+    <string name="fba_ok">ОК</string>
+    <string name="fba_cancel">Отмена</string>
+    <string name="fba_settings">Настройки</string>
+    <string name="fba_next">Далее</string>
+
+    <!-- reports -->
+    <string name="fba_report_output">Вывод отчета...</string>
+    <string name="fba_report_empty">Нет данных для отчета!</string>
+
+    <!-- meta -->
+    <string name="fba_meta_code">Код</string>
+    <string name="fba_meta_desc">Наименование</string>
+    <string name="fba_meta_number">Номер</string>
+    <string name="fba_meta_date">Дата</string>
+    <string name="fba_meta_posted">Проведен</string>
+    <string name="fba_meta_folder">Это группа</string>
+    <string name="fba_meta_predefined">Предопределенный</string>
+    <string name="fba_meta_parent">Родитель</string>
+    <string name="fba_meta_level">Уровень</string>
+    <string name="fba_meta_ref">Ссылка</string>
+    <string name="fba_meta_deletionmark">Пометка удаления</string>
+    <string name="fba_meta_new_item">Это новый</string>
+    <string name="fba_meta_modified">Изменено</string>
+    <string name="fba_meta_record_key">Ключ записи</string>
+    <string name="fba_meta_recorder">Регистратор</string>
+    <string name="fba_meta_period">Период</string>
+    <string name="fba_meta_line_number">Номер строки</string>
+
+    <string name="fba_msg_err_device_not_specified">"Не указан идентификатор устройства!"</string>
+    <string name="fba_msg_err_application_id_not_specified">"Не указан идентификатор приложения!"</string>
+    <string name="fba_msg_err_ip_address_not_specified">"Не указан IP-адрес сервера!"</string>
+    <string name="fba_msg_err_user_name_device_not_specified">"Имя пользователя не указано!"</string>
+    <string name="fba_msg_err_data_provider_not_specified">"Не указан поставщик данных обмена"</string>
+
+</resources>

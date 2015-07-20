@@ -1,0 +1,25 @@
+[
+{
+"ref":"05e26d98-01e4-11dc-a411-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000001",
+"description":"С доставкой",
+"owner":null,
+"level":0,
+"parent":null,
+"folder":false
+}
+,
+{
+"ref":"05e26d99-01e4-11dc-a411-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000002",
+"description":"Безналичная оплата",
+"owner":null,
+"level":0,
+"parent":null,
+"folder":false
+}
+]

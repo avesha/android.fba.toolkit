@@ -1,0 +1,37 @@
+[
+{
+"kachestvo":"d05404a0-6bce-449b-a798-41ebe5e5b977",
+"dataNachala":"2013-01-23T13:02:25",
+"ogranichivat":true,
+"imyaPolzovatelya":"user name 1",
+"stavkaNDS":"БезНДС",
+"foto":null
+}
+,
+{
+"kachestvo":"d05404a0-6bce-449b-a798-41ebe5e5b977",
+"dataNachala":"2013-01-01T00:00:00",
+"ogranichivat":false,
+"imyaPolzovatelya":"user name 2",
+"stavkaNDS":"НДС0",
+"foto":null
+}
+,
+{
+"kachestvo":"00000000-0000-0000-0000-000000000000",
+"dataNachala":"",
+"ogranichivat":false,
+"imyaPolzovatelya":"user name 3",
+"stavkaNDS":"НДС18",
+"foto":null
+}
+,
+{
+"kachestvo":"d05404a0-6bce-449b-a798-41ebe5e5b977",
+"dataNachala":"2013-01-01T00:00:00",
+"ogranichivat":true,
+"imyaPolzovatelya":"user name 4",
+"stavkaNDS":"НДС18",
+"foto":null
+}
+]

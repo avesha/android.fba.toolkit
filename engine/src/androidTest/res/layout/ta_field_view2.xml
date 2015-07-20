@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_horizontal_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ru.profi1c.engine.widget.FieldCheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Набор (синх.изменение)"/>
+
+        <ru.profi1c.engine.widget.FieldCheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ru.profi1c.engine.widget.FieldCheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:text="Весовой товар (синх.изменение)"/>
+
+        <ru.profi1c.engine.widget.FieldCheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <ru.profi1c.engine.widget.FieldEditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <ru.profi1c.engine.widget.FieldEditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ru.profi1c.engine.widget.FieldToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textOff="Нет"
+            android:textOn="Да"
+            android:checked="false"/>
+
+        <ru.profi1c.engine.widget.FieldToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"/>
+
+        <ru.profi1c.engine.widget.FieldToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:checked="false"/>
+
+        <ru.profi1c.engine.widget.FieldToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <ru.profi1c.engine.widget.FieldTextView
+        android:id="@+id/fieldTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#80acacac"
+        android:layout_marginTop="16dp"/>
+
+    <ru.profi1c.engine.widget.FieldTextView
+        android:id="@+id/fieldTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:padding="16dp"
+        android:background="#80acacac"/>
+
+    <ru.profi1c.engine.widget.FieldTextView
+        android:id="@+id/fieldTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100.00"
+        android:padding="16dp"
+        android:background="#80acacac"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+</LinearLayout>

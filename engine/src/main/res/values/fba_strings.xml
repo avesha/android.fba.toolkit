@@ -1,0 +1,21 @@
+<resources>
+    <!-- эти ресурсы переопределяются в приложении. НАЧАЛО -->
+    <string name="app_name"></string>
+    <string name="app_package"></string>
+    <string name="app_id"></string>
+    <string name="app_descr"></string>
+    <string name="feedback_author"></string>
+    <string name="feedback_tel"></string>
+    <string name="feedback_email"></string>
+    <string name="feedback_copyright"></string>
+    <string name="fba_ws_server">"10.0.2.2"</string>
+    <string name="fba_ws_service_name">"fbaService.1cws"</string>
+    <string name="fba_ws_app_namespace">"tradeDemo"</string>
+    <!-- эти ресурсы переопределяются в приложении. КОНЕЦ -->
+
+	<!-- Идентификатор получения лога ошибок от мобильного приложения -->
+	<string name="fba_id_trace_log">"fba_id_trace_log"</string>
+
+    <string name="fba_image_content_description">image</string>
+
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--Версия генератора, переопределяется при создании шаблона мобильного приложения в 1С -->
+	<integer name="fba_template_generator_version">0</integer>
+</resources>

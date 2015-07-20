@@ -1,0 +1,73 @@
+[
+{
+"ref":"cbcf4926-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"000000001",
+"description":"Транспортные расходы",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"cbcf4927-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"000000002",
+"description":"Представительские расходы",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"f9666da8-8729-11da-9aea-000d884f5d77",
+"deletionMark":false,
+"predefined":false,
+"code":"000000004",
+"description":"Переговоры (не осн.)",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"f184bdfa-88b0-11da-9aea-000d884f5d77",
+"deletionMark":false,
+"predefined":false,
+"code":"000000005",
+"description":"Переговоры (осн.)",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"bb4ad6b1-57e0-11d9-a2c3-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000003",
+"description":"Комиссионное вознаграждение",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"1de4815c-fd36-11db-a40e-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000006",
+"description":"Прочие затраты",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+]

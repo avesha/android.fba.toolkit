@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title><!--report_title--></title>
+		<style type="text/css">
+			body {
+				background: <!--report_background_color-->;
+				color: <!--report_text_color-->;
+			}
+			.any_header {
+				color: <!--report_header_text_color-->;
+			}
+			.text {
+				font-size: 10pt;	
+			}
+			.footer{
+				font-style: italic; /* Курсивное начертание */
+				color: <!--report_footer_text_color-->;
+			}
+			TABLE {
+				width: 100%; /* Ширина таблицы */
+				margin: 0 auto; /* Выравниваем таблицу по центру окна  */
+				border: 1px solid <!--table_border_color-->; /* стиль рамки */
+				border-collapse: collapse ; /* убирание задвоенности рамки */
+			}
+			TD{
+				border: 1px solid <!--table_border_color-->; /* Граница вокруг ячеек */
+				vertical-align: top; /* Выравнивание по центру */
+				font-size: 10pt;
+			}
+			TD.header {
+				background: <!--table_header_background_color-->;
+				text-align: center;
+				font-weight: bold; 
+				font-size: 10pt;
+			}
+			TD.value {
+				padding: 2px;
+				font-size: 10pt;
+			}
+		</style>
+	</head>
+	<body>
+		<h4 class="any_header"><!--header_1--></h4>
+		<h5 class="any_header"><!--header_2--></h5>
+		<h6 class="any_header"><!--header_3--></h6>		
+		<table>
+			<tr>
+				<td class="header"><!--table_header_value_1--></td>
+				<td class="header"><!--table_header_value_2--></td>
+			</tr>
+			<!--table_rows-->
+		</table>
+		<p class="footer"><!--footer--></p>	
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_menu_test_exchange"
+        android:checkable="true"
+        android:checked="true"
+        android:title="@string/action_menu_test_exchange"/>
+
+    <item
+        android:id="@+id/action_menu_skip_large_table"
+        android:checkable="true"
+        android:checked="true"
+        android:title="@string/action_menu_skip_large_table"/>
+
+    <item
+        android:id="@id/fba_menu_exchange"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/fba_exchange_to_server"/>
+    <item
+        android:id="@id/fba_menu_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/fba_settings"/>
+
+</menu>

@@ -1,0 +1,253 @@
+[
+{
+"ref":"48dcd2f9-1d18-11e2-8275-082e5f0b901d",
+"deletionMark":false,
+"predefined":false,
+"code":"НеАвторизован",
+"description":"Не авторизован",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"ad3057e8-ffd2-11db-8378-00055d74a96a",
+"deletionMark":false,
+"predefined":false,
+"code":"Иванов (менеджер по продажам)",
+"description":"Иванов Петр Федорович",
+"owner":null,
+"level":1,
+"parent":"cbcf494d-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"20b07cc5-13ef-11dc-8438-0050bac0d51d",
+"deletionMark":false,
+"predefined":false,
+"code":"ИнтернетПользовательУправленияЗаказами",
+"description":"ИнтернетПользовательУправленияЗаказами",
+"owner":null,
+"level":1,
+"parent":"bd72d907-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"bd72d907-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"Администратор",
+"description":"Администратор",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":true
+}
+,
+{
+"ref":"bd72d90a-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"Федоров (администратор)",
+"description":"Федоров Борис Михайлович",
+"owner":null,
+"level":1,
+"parent":"bd72d907-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"cbcf494d-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"Менеджеры",
+"description":"Менеджеры",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":true
+}
+,
+{
+"ref":"cbcf494f-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"Гладилина  (менеджер по продажам)",
+"description":"Гладилина Вера Михайловна",
+"owner":null,
+"level":1,
+"parent":"cbcf494d-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"dee6e1b6-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"Петров (менеджер по продажам)",
+"description":"Петров Сидор Иванович",
+"owner":null,
+"level":1,
+"parent":"cbcf494d-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"14ed8b85-55bd-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"Кассиры",
+"description":"Кассиры",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":true
+}
+,
+{
+"ref":"14ed8b86-55bd-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"Сидорова (кассир)",
+"description":"Сидорова Надежда Петровна",
+"owner":null,
+"level":1,
+"parent":"14ed8b85-55bd-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"5c741bac-084a-11dc-a417-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"Мазина (кассир ККМ)",
+"description":"Мазина Мария Константиновна",
+"owner":null,
+"level":1,
+"parent":"14ed8b85-55bd-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"b611258d-41ba-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Администратор розничной сети",
+"description":"Администратор розничной сети",
+"owner":null,
+"level":1,
+"parent":"bd72d907-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"813443e8-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Менеджеры магазинов",
+"description":"Менеджеры магазинов",
+"owner":null,
+"level":1,
+"parent":"cbcf494d-55bc-11d9-848a-00112f43529a",
+"folder":true
+}
+,
+{
+"ref":"813443e9-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Менеджер \"Обувь\"",
+"description":"Масюк Динара Викторовна",
+"owner":null,
+"level":2,
+"parent":"813443e8-41e0-11dd-ac9d-0015e9b8c48d",
+"folder":false
+}
+,
+{
+"ref":"813443ea-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Менеджер \"Продукты\"",
+"description":"Петрищев Олег Константинович",
+"owner":null,
+"level":2,
+"parent":"813443e8-41e0-11dd-ac9d-0015e9b8c48d",
+"folder":false
+}
+,
+{
+"ref":"813443ef-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Менеджер \"Бытовая техника\"",
+"description":"Королев Сергей Васильевич",
+"owner":null,
+"level":2,
+"parent":"813443e8-41e0-11dd-ac9d-0015e9b8c48d",
+"folder":false
+}
+,
+{
+"ref":"813443f0-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Кассиры магазинов",
+"description":"Кассиры магазинов",
+"owner":null,
+"level":1,
+"parent":"14ed8b85-55bd-11d9-848a-00112f43529a",
+"folder":true
+}
+,
+{
+"ref":"813443f5-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Кассир \"Бытовая техника\"",
+"description":"Казакова Наталья Александровна",
+"owner":null,
+"level":2,
+"parent":"813443f0-41e0-11dd-ac9d-0015e9b8c48d",
+"folder":false
+}
+,
+{
+"ref":"813443f6-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Кассир \"Обувь\"",
+"description":"Мазалова Ирина Львовна",
+"owner":null,
+"level":2,
+"parent":"813443f0-41e0-11dd-ac9d-0015e9b8c48d",
+"folder":false
+}
+,
+{
+"ref":"813443f7-41e0-11dd-ac9d-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"Кассир \"Продукты\"",
+"description":"Мурадян Нелли Ашотовна",
+"owner":null,
+"level":2,
+"parent":"813443f0-41e0-11dd-ac9d-0015e9b8c48d",
+"folder":false
+}
+,
+{
+"ref":"fbfefd21-3cc0-471b-af4b-1fc22fe6062f",
+"deletionMark":false,
+"predefined":false,
+"code":"НовыйПользователь",
+"description":"Новый пользователь",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+]

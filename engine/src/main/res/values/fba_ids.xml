@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="fba_menu_settings" type="id"/>
+    <item name="fba_menu_exchange" type="id"/>
+    <item name="fba_marker" type="id"/>
+    <item name="fba_code" type="id"/>
+    <item name="fba_description" type="id"/>
+    <item name="fba_posted" type="id"/>
+    <item name="fba_data" type="id"/>
+    <item name="fba_time" type="id"/>
+    <item name="fba_number" type="id"/>
+    <item name="fba_ok" type="id"/>
+    <item name="fba_version_name" type="id"/>
+    <item name="fba_about_info" type="id"/>
+    <item name="fba_user_name" type="id"/>
+    <item name="fba_password" type="id"/>
+    <item name="fba_label" type="id"/>
+    <item name="fba_next" type="id"/>
+    <item name="fba_object_view" type="id"/>
+    <item name="fba_list_header" type="id"/>
+	<item name="fba_stub_list_header" type="id"/>
+    <item name="fba_content" type="id"/>
+
+</resources>

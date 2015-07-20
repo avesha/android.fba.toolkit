@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SimpleListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@id/fba_code"
+        style="@style/SimpleListItemView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:maxWidth="20dp" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@id/fba_description"
+        style="@style/SimpleListItemView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingLeft="@dimen/fba_list_item_devider" />
+
+</LinearLayout>

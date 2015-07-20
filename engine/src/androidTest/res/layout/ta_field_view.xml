@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fba_cardview_margin"
+            android:background="@color/material_deep_teal_200"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample edit date and time of document"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <ru.profi1c.engine.widget.FieldDateView
+                    android:id="@+id/fvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#80acacac"
+                    android:clickable="false"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="32dp"
+                    android:text="01.01.0000"/>
+
+                <ru.profi1c.engine.widget.FieldTimeView
+                    android:id="@+id/fvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#eee"
+                    android:clickable="false"
+                    android:gravity="right|center_vertical"
+                    android:minHeight="32dp"
+                    android:text="12:00"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save doc"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fba_cardview_margin"
+            android:background="@color/material_deep_teal_200"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample spinner of documents"/>
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/spinDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/btnSaveDoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save doc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fba_cardview_margin"
+            android:background="@color/material_deep_teal_200"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample edit some fields of catalog"/>
+
+            <ru.profi1c.engine.widget.FieldEditText
+                android:id="@+id/etDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"/>
+
+            <ru.profi1c.engine.widget.FieldEditText
+                android:id="@+id/etAsIntValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned"/>
+
+            <ru.profi1c.engine.widget.FieldEditText
+                android:id="@+id/etAsDouble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/btnSaveCatalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save catalog"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fba_cardview_margin"
+            android:background="@color/material_deep_teal_200"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample cache spinner adapters"/>
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/spinEnum1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:spinnerMode="dialog"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <ru.profi1c.engine.widget.FieldPresentationSpinner
+                    android:id="@+id/spinEnum2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear"/>
+            </LinearLayout>
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/spinCatalog1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"/>
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/spinCatalog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                />
+
+            <Button
+                android:id="@+id/btnSaveCatalogTestSpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Save catalog"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

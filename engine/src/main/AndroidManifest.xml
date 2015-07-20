@@ -1,0 +1,47 @@
+<manifest
+    package="ru.profi1c.engine"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- Требуется, если deviceId берется от IMEI, по умолчанию: вкл -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application>
+        <service android:name="ru.profi1c.engine.exchange.ExchangeService"/>
+
+        <receiver android:name="ru.profi1c.engine.exchange.ExchangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="ru.profi1c.engine.app.FbaActivityDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Fba.Light.Dialog"/>
+        <activity
+            android:name="ru.profi1c.engine.app.FbaSimplePreferenceActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/fba_settings"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.profi1c.engine.app.FbaSecurityNumericActivity"
+            android:theme="@style/Theme.Fba.Light.NoActionBar.FullScreen"/>
+
+
+    </application>
+
+</manifest>

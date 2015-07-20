@@ -1,0 +1,85 @@
+[
+{
+"ref":"bd72d906-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"000000002",
+"description":"Отдел оптовой продажи",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"dee6e183-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"000000001",
+"description":"Отдел закупки",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"f01a7921-55bc-11d9-848a-00112f43529a",
+"deletionMark":false,
+"predefined":false,
+"code":"000000003",
+"description":"Отдел розничной продажи",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false
+}
+,
+{
+"ref":"e1d733b7-55c2-11d9-a2c3-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000004",
+"description":"НТТ Ларек\"Хозтовары\" ",
+"owner":null,
+"level":2,
+"parent":"cf6703c0-0d10-11dc-a41b-00055d80a2d1",
+"folder":false
+}
+,
+{
+"ref":"e1d733ba-55c2-11d9-a2c3-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000005",
+"description":"НТТ \"Розница\"",
+"owner":null,
+"level":2,
+"parent":"cf6703c0-0d10-11dc-a41b-00055d80a2d1",
+"folder":false
+}
+,
+{
+"ref":"cf6703c0-0d10-11dc-a41b-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000006",
+"description":"Отдел работы с НТТ",
+"owner":null,
+"level":1,
+"parent":"f01a7921-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+,
+{
+"ref":"cf6703c1-0d10-11dc-a41b-00055d80a2d1",
+"deletionMark":false,
+"predefined":false,
+"code":"000000007",
+"description":"Отдел работы с магазинами",
+"owner":null,
+"level":1,
+"parent":"f01a7921-55bc-11d9-848a-00112f43529a",
+"folder":false
+}
+]

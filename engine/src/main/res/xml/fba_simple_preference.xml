@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- To fix auto hide action bar then click on PreferenceScreen:
+            - use FbaPreferenceActivity
+            - set any android:key for PreferenceScreen -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/fba_identification">
+        <EditTextPreference
+            android:key="fba_key_user_name"
+            android:summary="@string/fba_select_user_name"
+            android:title="@string/fba_user_name"/>
+        <EditTextPreference
+            android:key="fba_key_user_password"
+            android:summary="@string/fba_select_user_password"
+            android:title="@string/fba_password"/>
+
+        <Preference
+            android:key="fba_key_device_id"
+            android:title="@string/fba_number_device"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/fba_exchange_to_server">
+        <EditTextPreference
+            android:key="fba_key_server_ip"
+            android:summary="@string/fba_set_server_ip"
+            android:title="@string/fba_server_ip"/>
+
+        <PreferenceScreen
+            android:key="fba_key_screen_exchange_settings"
+            android:summary="@string/fba_exchange_schedule_msg"
+            android:title="@string/fba_exchange_schedule">
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="fba_key_enable_exchange_schedule"
+                android:summary="@string/fba_enable_exchange_schedule"
+                android:title="@string/fba_enabled"/>
+
+            <ru.profi1c.engine.widget.TimePreference
+                android:defaultValue="09:00"
+                android:key="fba_key_exchange_schedule_time"
+                android:title="@string/fba_time"/>
+
+            <Preference
+                android:key="fba_key_exchange_schedule_days"
+                android:title="@string/fba_days_of_week"/>
+
+            <PreferenceCategory android:title="@string/fba_notification_sound">
+                <RingtonePreference
+                    android:key="fba_key_sound_success"
+                    android:ringtoneType="notification|alarm"
+                    android:showDefault="false"
+                    android:showSilent="true"
+                    android:summary="@string/fba_mute"
+                    android:title="@string/fba_notification_sound_exchange_sucsess"/>
+                <RingtonePreference
+                    android:key="fba_key_sound_error"
+                    android:ringtoneType="notification|alarm"
+                    android:showDefault="false"
+                    android:showSilent="true"
+                    android:summary="@string/fba_mute"
+                    android:title="@string/fba_notification_sound_exchange_error"/>
+                <RingtonePreference
+                    android:key="fba_key_sound_new_app"
+                    android:ringtoneType="notification|alarm"
+                    android:showDefault="false"
+                    android:showSilent="true"
+                    android:summary="@string/fba_mute"
+                    android:title="@string/fba_notification_sound_new_app"/>
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/fba_feedback">
+        <PreferenceScreen
+            android:key="fba_key_about"
+            android:title="@string/fba_about"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

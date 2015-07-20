@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--This text is generated automatically, do not delete it. 'FBA Toolkit', www.profi1c.ru-->
+	<string name="app_name">"fba_toolkit test"</string>
+	<string name="app_package">"com.sample.app2"</string>
+	<string name="app_id">"TEST_APP_01"</string>
+	<string name="app_descr">"Это описание программы"</string>
+	<string name="feedback_author">"Сидоров Сидор Петрович"</string>
+	<string name="feedback_tel">"+7(495)000-01-02"</string>
+	<string name="feedback_email">"sidor_sidoroff@mail.ru"</string>
+	<string name="feedback_copyright">"Copyright 2010-2012My company LTD"</string>
+	<string name="fba_ws_server">"10.0.2.2"</string>
+	<string name="fba_ws_service_name">"fbaService.1cws"</string>
+	<string name="fba_ws_app_namespace">"demoTrade"</string>
+
+	<string name="action_menu_test_exchange">"Тестовый обмен"</string>
+	<string name="action_menu_skip_large_table">"Пропустить большие таблицы"</string>
+
+	<string name="title_reports">"Отчеты"</string>
+
+	<string name="report_ext_file_source">"Это отчет на основании файла"</string>
+	<string name="report_not_found_source">"Это отчет на основании несуществующего файла"</string>
+	<string name="report_inner_file_source">"Это отчет по внутренним ресурсам"</string>
+	<string name="report_simple_html">"Это отчет simple html"</string>
+	<string name="report_html_map_report">"Это отчет simple map html"</string>
+	<string name="report_name_google_chart_tools">Продажи продукции по категориям (Google Chart Tools)</string>
+
+	<string name="msg_err_view_pdf_reports">"Не установлено приложение для просмотра отчетов в PDF формате"</string>
+	<string name="msg_no_created_object">"Объект не создан"</string>
+	<string name="msg_err_save_object">"Ошибка сохранения объекта"</string>
+	<string name="msg_success_save_object">"Объект сохранен"</string>
+
+	<string name="prompt_hierarchy">"Группы номенклатуры"</string>
+
+	<string name="btn_save">"Сохранить"</string>
+	<string name="btn_new">"Новый"</string>
+	<string name="btn_edit">"Изменить"</string>
+</resources>

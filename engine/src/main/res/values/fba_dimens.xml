@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fba_base_vspacing">8dp</dimen>
+    <dimen name="fba_base_hspacing">16dp</dimen>
+
+    <!-- simple row list -->
+    <dimen name="fba_list_item_devider">3dp</dimen>
+    <dimen name="fba_list_checkbox_width">32dp</dimen>
+    <dimen name="fba_list_item_padding">3dp</dimen>
+    <dimen name="fba_list_item_min_height">36dp</dimen>
+
+    <dimen name="fba_cardview_margin">6dp</dimen>
+    <dimen name="fba_cardview_vspacing">0dp</dimen>
+    <dimen name="fba_cardview_radius">2dp</dimen>
+    <dimen name="fba_cardview_item_padding">@dimen/fba_base_hspacing</dimen>
+
+    <dimen name="fba_dialog_content_padding">16dp</dimen>
+
+    <dimen name="fba_text_size_head_dialog">16dp</dimen>
+
+    <dimen name="fba_text_size_title_toolbar">20dp</dimen>
+    <dimen name="fba_text_size_subtitle_toolbar">16dp</dimen>
+
+    <dimen name="fba_text_size_large">22sp</dimen>
+    <dimen name="fba_text_size_medium">18sp</dimen>
+    <dimen name="fba_text_size_small">14sp</dimen>
+    <dimen name="fba_text_size_ultra_small">10sp</dimen>
+
+</resources>

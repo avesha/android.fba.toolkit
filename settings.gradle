@@ -1,0 +1,3 @@
+include ':engine', ':addon_mapsforge'
+include 'samples:fba_sample1_tasks_01'
+include 'samples:fba_sample1_tasks_02'

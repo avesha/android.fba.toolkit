@@ -1,0 +1,41 @@
+[
+{
+"ref":"809e1225-3c4b-11dc-8cdc-0015e92f2802",
+"deletionMark":false,
+"predefined":false,
+"code":"000000001",
+"description":"Печать ТТН",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false,
+"prinadlezhnost":[
+{
+"predstavlenieObekta":"Документ \"Возврат товаров поставщику\"",
+"tablichnayaChastImya":"",
+"owner":"809e1225-3c4b-11dc-8cdc-0015e92f2802",
+"lineNumber":1
+}
+]
+}
+,
+{
+"ref":"55536bd6-4685-11dd-aca1-0015e9b8c48d",
+"deletionMark":false,
+"predefined":false,
+"code":"000000002",
+"description":"Новая",
+"owner":null,
+"level":0,
+"parent":"00000000-0000-0000-0000-000000000000",
+"folder":false,
+"prinadlezhnost":[
+{
+"predstavlenieObekta":"Документ \"Приходный ордер на товары\"",
+"tablichnayaChastImya":"Товары",
+"owner":"55536bd6-4685-11dd-aca1-0015e9b8c48d",
+"lineNumber":1
+}
+]
+}
+]

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="kachestvo">
+        <item>Новый</item>
+        <item>Б/У</item>
+        <item>Некондиция</item>
+        <item>Из ремонта</item>
+        <item>Первая свежесть</item>
+        <item>Последняя свежесть</item>
+        <item>Склиф-лотерея</item>
+    </string-array>
+
+    <string-array name="sku_groups">
+        <item>Запасные части и расходные материалы для транспорт</item>
+        <item>Комплектующие изделия, конструкции и детали</item>
+        <item>Прочие материалы</item>
+        <item>Рекламные материалы</item>
+        <item>Спецодежда</item>
+        <item>Тара и упаковка(необоротная)</item>
+        <item>Тара и упаковка(оборотная)</item>
+        <item>Топливо(бензин, дизель)</item>
+        <item>Пиво Импортное разливное</item>
+        <item>Пиво ПИТ разливное</item>
+        <item>Квасы</item>
+        <item>Прочие напитки</item>
+    </string-array>
+
+    <string-array name="cenovie_gruppi">
+        <item>Вентиляторы</item>
+        <item>Обувь</item>
+        <item>Электроприборы</item>
+        <item>Телевизоры</item>
+    </string-array>
+
+    <string-array name="fio">
+        <item>Андреев Александр Николаевич</item>
+        <item>Бирюков Сергей Владимирович</item>
+        <item>Веденеев Алексей.</item>
+        <item>Владимиров Сергей Николаевич</item>
+        <item>Гельман Анатолий</item>
+        <item>Рожков Валерий</item>
+        <item>Смородин Илья Петрович</item>
+        <item></item>
+        <item>null</item>
+    </string-array>
+
+    <string-array name="polzovatel">
+        <item>Иванов Петр Федорович</item>
+        <item>Администратор</item>
+        <item>Федоров Борис Михайлович</item>
+        <item>Петров Сидор Иванович</item>
+        <item>Мазина Мария Константиновна</item>
+        <item>Петрищев Олег Константинович</item>
+        <item>Заблотный Вячеслав</item>
+        <item>Бендеров Остап Паникович</item>
+        <item>Ржевский Прапор Злобный</item>
+    </string-array>
+
+    <string-array name="podrazdeleniya">
+        <item>Отдел оптовой продажи</item>
+        <item>Отдел закупки</item>
+        <item>Отдел розничной продажи</item>
+        <item>Развал</item>
+        <item>Шоурум</item>
+        <item>Распространители у метро</item>
+        <item>Через отдел пропаганды</item>
+        <item>Адвентисты 7-го дня</item>
+    </string-array>
+
+    <string-array name="valuta">
+        <item>Евро</item>
+        <item>Доллар США</item>
+        <item>Российский рубль</item>
+        <item>дубль валюта</item>
+    </string-array>
+
+    <string-array name="valuta_desc">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>руб.</item>
+        <item>дубль</item>
+        <item>Тенге</item>
+    </string-array>
+
+    <string-array name="valuta_code">
+        <item>978</item>
+        <item>840</item>
+        <item>810</item>
+        <item>810</item>
+        <item>398</item>
+    </string-array>
+
+    <string-array name="classif_ed_desc">
+        <item>6pack</item>
+        <item>Банка</item>
+        <item>Бутылка</item>
+        <item>квадратные метры</item>
+        <item>квадратные сантиметры</item>
+        <item>Килограмм</item>
+        <item>кег-бочка</item>
+        <item>Литр</item>
+    </string-array>
+
+    <string-array name="classif_ed_name">
+        <item>6pack</item>
+        <item>Банка</item>
+        <item>Бут.</item>
+        <item>кв.м</item>
+        <item>кв.см</item>
+        <item>кг</item>
+        <item>кег-бочка</item>
+        <item>л</item>
+    </string-array>
+
+    <integer-array name="koeff">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>10</item>
+        <item>12</item>
+        <item>0</item>
+        <item>-1</item>
+    </integer-array>
+
+    <string-array name="st_zatrat">
+        <item>Материалы</item>
+        <item>Сырье и материалы</item>
+        <item>Аренда помещения</item>
+        <item>По страховым взносам</item>
+        <item>Транспортные расходы</item>
+        <item>Представительские расходы</item>
+        <item>Перевод</item>
+        <item>Реклама</item>
+        <item>При списании материалов</item>
+    </string-array>
+
+    <string-array name="sku_descr">
+        <item>ARECA S3000 10w40 2л. п/с. SJ|/CF</item>
+        <item>WD 40 200 гр</item>
+        <item>Автошина 185/75R16C Cargo AS (K-156) Amtel TBL</item>
+        <item>Аккумулятор 6СТ-90 AL3 Big City</item>
+        <item>Вентиль</item>
+        <item>Вентилятор 3302</item>
+        <item>Вилка переключения 4,5-й передачи МАЗ</item>
+        <item>Вода дистиллированная 2 л</item>
+        <item>Буклет А4</item>
+        <item>Рюкзак "Пуля" с логотипом "ПИТ"</item>
+        <item></item>
+        <item>Ножевка</item>
+    </string-array>
+
+    <string-array name="sku_category">
+        <item>Синий</item>
+        <item>Класный</item>
+        <item>Легкий</item>
+        <item>Быстрый</item>
+        <item>Черный</item>
+        <item>дереванная</item>
+        <item>(твердый)</item>
+        <item>(не крутится)</item>
+        <item>экстракт</item>
+        <item>(без цены)</item>
+        <item>по металу</item>
+        <item>прозрачный</item>
+    </string-array>
+
+    <string-array name="kontragents">
+        <item>Гянджалиев А.О.О. ИП</item>
+        <item>Коралловые рифы ООО</item>
+        <item>Спарт-С ООО</item>
+        <item>Ляпидевский М.Р. ИП</item>
+        <item>ООО ТСЦ \"Грузовик\"</item>
+        <item>"Саратовский филиал ОАО "Военно-страховая компания""</item>
+        <item>Веха запасные части ООО</item>
+        <item>Метро-Принт ООО</item>
+        <item>null</item>
+        <item></item>
+        <item>"ООО "Телекоммуникационная компания "Диалог" основное подразделение, очень длинное название"</item>
+    </string-array>
+
+    <string-array name="kontragents_gererate">
+        <item>голладские</item>
+        <item>LTD </item>
+        <item>ЗАО </item>
+        <item>павильон</item>
+        <item>(ларек)</item>
+        <item>(торговая точка)</item>
+        <item>мелкий</item>
+        <item>важный</item>
+        <item>дубль</item>
+        <item>(обособленное подразделение)</item>
+        <item>филиал</item>
+        <item>подразделение</item>
+    </string-array>
+
+    <string-array name="organization">
+        <item>Cтройснаб</item>
+        <item>Торгровый дом \'Аппатиты\'</item>
+        <item>Торговый комплекс А</item>
+        <item>ООО Бытовая техника</item>
+    </string-array>
+
+</resources>

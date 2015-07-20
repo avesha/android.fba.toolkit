@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fba_material_dialog_title_padding">24dp</dimen>
+    <dimen name="fba_dialog_content_padding">@dimen/fba_material_dialog_title_padding</dimen>
+
+    <dimen name="fba_cardview_vspacing">6dp</dimen>
+
+</resources>

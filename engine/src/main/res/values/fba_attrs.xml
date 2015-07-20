@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default login button style. -->
+    <attr name="lightButtonStyle" format="reference" />
+    <attr name="simpleListHeaderStyle" format="reference" />
+    <attr name="reportDlgBgrColor" format="color" />
+	<attr name="verticalListDividerDrawable" format="reference" />
+</resources>
