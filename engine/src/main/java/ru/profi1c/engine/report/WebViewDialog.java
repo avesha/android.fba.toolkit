@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.http.SslError;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -86,7 +88,8 @@ public class WebViewDialog extends FbaDialog {
         Window window = getWindow();
         window.setBackgroundDrawable(new ColorDrawable(DEF_WINDOWS_BACKGROUND_COLOR));
 
-        mSpinner = new ProgressDialog(getContext(), android.R.style.Theme_DeviceDefault_Dialog);
+        mSpinner = new ProgressDialog(getContext(), (Build.VERSION.SDK_INT <
+                                                     Build.VERSION_CODES.LOLLIPOP) ? 0 : android.R.style.Theme_DeviceDefault_Dialog);
         mSpinner.requestWindowFeature(Window.FEATURE_NO_TITLE);
         mSpinner.setCancelable(false);
         mSpinner.setCanceledOnTouchOutside(false);
@@ -168,6 +171,11 @@ public class WebViewDialog extends FbaDialog {
         settings.setSupportZoom(true);
         settings.setBuiltInZoomControls(true);
 
+        settings.setAppCacheEnabled(true);
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        settings.setAppCachePath("/data/data/" + getContext().getPackageName() + "/cache");
+        settings.setAllowFileAccess(true);
+
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.GINGERBREAD_MR1) {
             settings.setDisplayZoomControls(true);
         }
@@ -197,7 +205,6 @@ public class WebViewDialog extends FbaDialog {
 
     private class ReportWebViewClient extends WebViewClient {
 
-
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
@@ -224,6 +231,10 @@ public class WebViewDialog extends FbaDialog {
             return true;
         }
 
+        @Override
+        public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+            handler.proceed();
+        }
     }
 
 

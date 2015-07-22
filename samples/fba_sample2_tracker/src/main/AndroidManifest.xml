@@ -1,0 +1,38 @@
+<manifest
+    package="ru.profi1c.samples.tracker"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  Если используются карты и определение координат по GPS и данным сотовой сети -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="App"
+        android:allowBackup="true"
+        android:description="@string/app_descr"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="ru.profi1c.samples.tracker.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="LocationService"/>
+
+        <receiver android:name="BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

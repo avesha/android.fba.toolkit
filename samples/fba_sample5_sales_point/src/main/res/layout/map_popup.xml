@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.profi1c.engine.widget.ObjectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ovSalesPoint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_popup_bgr"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlAlignBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ru.profi1c.engine.widget.ObjectView
+            android:id="@+id/ovFotoStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ivFoto"
+                android:layout_width="90dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/image_bgr"
+                android:scaleType="fitXY" />
+        </ru.profi1c.engine.widget.ObjectView>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ovFotoStorage"
+            android:padding="3dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDescription"
+            android:layout_below="@+id/tvDescription"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="#a5a5a5"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPhone"
+        android:layout_alignBottom="@+id/tvPhone"
+        android:layout_toRightOf="@+id/tvPhone"
+        android:autoLink="web"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlAlignBase"
+        android:autoLink="phone"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:textSize="12sp" />
+
+</ru.profi1c.engine.widget.ObjectView>

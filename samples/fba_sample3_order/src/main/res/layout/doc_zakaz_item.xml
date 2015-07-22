@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ru.profi1c.engine.widget.ObjectView
+        android:id="@id/fba_object_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/GroupTitle"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/date_time" />
+
+                <ru.profi1c.engine.widget.FieldDateView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/editTextBackground"
+                    android:clickable="false" />
+
+                <ru.profi1c.engine.widget.FieldTimeView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="?android:attr/editTextBackground"
+                    android:clickable="false"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/GroupTitle"
+                android:text="@string/kontragent" />
+
+            <View style="@style/Stroke" />
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/kontragent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog" />
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/dogovorKontragenta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/GroupTitle"
+                android:text="@string/sclad_tipcen" />
+
+            <View style="@style/Stroke" />
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/sklad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ru.profi1c.engine.widget.FieldPresentationSpinner
+                android:id="@+id/tipCen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/GroupTitle"
+                android:text="@string/delivery_comment" />
+
+            <View style="@style/Stroke" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/data_otgruzki"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#3f3f3f" />
+
+                <ru.profi1c.engine.widget.FieldDateView
+                    android:id="@+id/dataOtgruzki"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/editTextBackground"
+                    android:clickable="false"
+                    android:gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <ru.profi1c.engine.widget.FieldEditText
+                android:id="@+id/kommentarii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="top|left"
+                android:lines="2" />
+
+        </LinearLayout>
+    </ru.profi1c.engine.widget.ObjectView>
+
+</ScrollView>

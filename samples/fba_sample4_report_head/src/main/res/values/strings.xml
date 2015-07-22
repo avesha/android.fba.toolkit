@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--This text is generated automatically, do not delete it. 'FBA Toolkit', www.profi1c.ru-->
+	<string name="app_name">"Рапорт руководителю"</string>
+	<string name="app_package">"ru.profi1c.samples.report.head"</string>
+	<string name="app_id">"SAMPLE_REPORT_HEAD"</string>
+	<string name="app_descr">"Рапорт руководителю. Для конфигурации «FBA – демо»"</string>
+	<string name="feedback_author">"ООО "Сфера""</string>
+	<string name="feedback_tel">"+7(495) 000-00-00"</string>
+	<string name="feedback_email">"support@sfera.ru"</string>
+	<string name="feedback_copyright">"Copyright 2013, ООО "Сфера""</string>
+	<string name="fba_ws_server">"10.0.2.2"</string>
+	<string name="fba_ws_service_name">"fbaService.1cws"</string>
+	<string name="fba_ws_app_namespace">"FbaDemo/ws"</string>
+	<string name="receive_reports">Получаю отчеты...</string>
+	<string name="report_name_to_chief">Финасовые показатели</string>
+	<string name="report_name_products_in_stok">Товары на складах</string>
+	<string name="report_name_google_chart_tools">Продажи продукции по категориям (Google Chart Tools)</string>
+	<string name="report_name_plot_jquery">Пример использования jQuery библиотеки Flot</string>
+	<string name="report_name_pdf_sample">Пример просмотра PDF отчета во внешнем приложении</string>
+</resources>

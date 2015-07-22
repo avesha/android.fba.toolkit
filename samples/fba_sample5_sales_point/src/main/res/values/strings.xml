@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--This text is generated automatically, do not delete it. 'FBA Toolkit', www.profi1c.ru-->
+	<string name="app_name">"Аудит торговой точки"</string>
+	<string name="app_package">"ru.profi1c.samples.audit.salespoint"</string>
+	<string name="app_id">"SAMPLE_AUDIT_SALES_POINT"</string>
+	<string name="app_descr">"Аудит торговой точки.
+Пример использования офлайн карт на основе OpenStreetMap. Для конфигурации «FBA – демо»"</string>
+	<string name="feedback_author">"ООО "Сфера""</string>
+	<string name="feedback_tel">"+7(495) 000-00-00"</string>
+	<string name="feedback_email">"support@sfera.ru"</string>
+	<string name="feedback_copyright">"Copyright 2013, ООО "Сфера""</string>
+	<string name="fba_ws_server">"10.0.2.2"</string>
+	<string name="fba_ws_service_name">"fbaService.1cws"</string>
+	<string name="fba_ws_app_namespace">"FbaDemo/ws"</string>
+	
+	<string name="menu_map">"На карте"</string>
+	<string name="menu_save_coordinates">"Сохранить координаты"</string>
+
+	<string name="msg_save_point_coodinates">Сохранены установленные координаты точек</string>
+	<string name="how_to_step1">Пример использования оффлайн карт на базе картографического сервиса OpenStreetMap</string>
+	<string name="how_to_step2">1.Установите параметры подключения к серверу 1С в настройках (для демо-конфигурации имя пользователя «ivanov», пароль: 123456</string>
+	<string name="how_to_step3">2. Чтобы загрузить данные с сервера выполните обмен по варианту «Начальная инициализация»</string>
+	<string name="how_to_step4">3. Для отображения всех торговых точек на карте воспользуйтесь пунктом меню «На карте». В демо-конфигурации это пиццерии в центре города Орел.</string>
+	<string name="how_to_step5">4. Маркеры красного цвета можно перемещать по карте т.е уточнить для них координаты. По окончании выберите пункт меню «Сохранить координаты»</string>
+	<string name="how_to_step6">5. Выполните обмен с сервером по варианту «Только сохранение данных» для передачи информации на сервер</string>
+
+</resources>

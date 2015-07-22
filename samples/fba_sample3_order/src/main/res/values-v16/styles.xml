@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="GroupTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/group_large_text</item>
+        <item name="android:layout_marginLeft">@dimen/group_margin_left</item>
+        <item name="android:textColor">@color/group_title_text</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+
+    </style>
+
+</resources>

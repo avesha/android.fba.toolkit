@@ -1,0 +1,44 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.Fba" />
+
+    <style name="AppBaseTheme.Light" parent="@style/Theme.Fba.Light" />
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme.Light">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.Dialog" parent="@style/Theme.Fba.Light.Dialog" />
+
+    <style name="listRow">
+        <item name="android:divider">?android:dividerVertical</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:background">?android:attr/activatedBackgroundIndicator</item>
+    </style>
+
+    <style name="GroupTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/group_large_text</item>
+        <item name="android:layout_marginLeft">@dimen/group_margin_left</item>
+        <item name="android:textColor">@color/group_title_text</item>
+
+    </style>
+
+    <style name="Stroke">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@color/stroke</item>
+    </style>
+
+</resources>

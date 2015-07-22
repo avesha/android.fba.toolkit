@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--This text is generated automatically, do not delete it. 'FBA Toolkit', www.profi1c.ru-->
+	<string name="app_name">"Мониторинг"</string>
+	<string name="app_package">"ru.profi1c.samples.tracker"</string>
+	<string name="app_id">"SAMPLE_APP_TRACKER"</string>
+	<string name="app_descr">"Мониторинг гео. положения мобильного сотрудника"</string>
+	<string name="feedback_author">"ООО "Сфера""</string>
+	<string name="feedback_tel">"+7(495)000-00-01"</string>
+	<string name="feedback_email">"info@sfera.ru"</string>
+	<string name="feedback_copyright">"Copyright 2013, ООО "Сфера""</string>
+	<string name="fba_ws_server">"10.0.2.2"</string>
+	<string name="fba_ws_service_name">"fbaService.1cws"</string>
+	<string name="fba_ws_app_namespace">"FbaDemo/ws"</string>
+	<string name="switch_off">Выключить</string>
+	<string name="switch_on">Включить</string>
+</resources>

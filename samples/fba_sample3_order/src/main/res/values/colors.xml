@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="group_title_text">#33b5e5</color>
+    <color name="stroke">#8000b0f0</color>
+
+    <color name="pager_divider_color">#80c0c0c0</color>
+
+</resources>

@@ -82,7 +82,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = pRepoType
-        name = project.name
+        name = "${pMavenGroupId}:${project.name}"
         websiteUrl = pPublicSiteUrl
         vcsUrl = pPublicGitUrl
         licenses = ["${pLicenseShortName}"]

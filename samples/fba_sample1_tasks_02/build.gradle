@@ -10,6 +10,9 @@ android {
         targetSdkVersion 21
         versionCode 2
         versionName "1.02"
+
+        multiDexEnabled true
+        testInstrumentationRunner "com.android.test.runner.MultiDexTestRunner"
     }
     buildTypes {
         release {
@@ -19,6 +22,17 @@ android {
     }
     lintOptions {
         abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/services/org.xmlpull.v1.XmlPullParserFactory'
+        exclude 'com/j256/ormlite/android/LICENSE.txt'
+        exclude 'com/j256/ormlite/android/README.txt'
+        exclude 'com/j256/ormlite/core/LICENSE.txt'
+        exclude 'com/j256/ormlite/core/README.txt'
+        exclude 'COPYING'
+        exclude 'COPYING.LESSER'
     }
 }
 

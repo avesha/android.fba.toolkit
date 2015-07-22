@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--This text is generated automatically, do not delete it. 'FBA Toolkit', www.profi1c.ru-->
+	<string name="app_name">"Заказы покупателей"</string>
+	<string name="app_package">"ru.profi1c.samples.order"</string>
+	<string name="app_id">"SAMPLE_APP_ORDERS"</string>
+	<string name="app_descr">"Создание заказов покупателей. Для конфигурации «FBA – демо»"</string>
+	<string name="feedback_author">"ООО "Сфера""</string>
+	<string name="feedback_tel">"+7(495) 000-00-00"</string>
+	<string name="feedback_email">"support@sfera.ru"</string>
+	<string name="feedback_copyright">"Copyright 2013, ООО "Сфера""</string>
+	<string name="fba_ws_server">"10.0.2.2"</string>
+	<string name="fba_ws_service_name">"fbaService.1cws"</string>
+
+	<!-- в статье имя 'demoFba'  -->
+	<string name="fba_ws_app_namespace">"FbaDemo/ws"</string>
+
+	<string name="new_order">Новый заказ</string>
+	<string name="order">Заказ покупателя</string>
+
+	<string name="list_orders">Список заказов</string>
+	<string name="number">Номер</string>
+	<string name="kontragent">Контрагент</string>
+	<string name="summa">Сумма</string>
+	<string name="list_nomenklatura">Список номенклатуры</string>
+	<string name="nomenklatura">Номенклатура</string>
+	<string name="data_otgruzki">Доставка</string>
+	<string name="date_time">Дата и время</string>
+	<string name="sclad_tipcen">Склад и тип цен</string>
+	<string name="delivery_comment">Сроки исполнения и комментарий</string>
+	<string name="prochee">Прочее</string>
+
+	<string name="menu_title_actions">Действия</string>
+	<string name="menu_change">Изменить</string>
+	<string name="menu_delete">Удалить</string>
+	<string name="menu_save">Сохранить</string>
+
+	<string name="msg_not_select_folder">Нельзя выбирать группу!</string>
+	<string name="msg_save_changes">Сохранить внесенные изменения?</string>
+
+	<string name="sum_of_order_rub">Сумма заказа, руб</string>
+
+</resources>
