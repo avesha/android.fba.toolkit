@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    style="@style/DetailPanelContent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="0"
+    android:stretchColumns="1">
+
+    <TableRow
+        style="@style/DetailPanelTwoRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            style="@style/DetailPanelFirstAction"
+            android:src="@mipmap/ic_detail_fa_directions"/>
+
+        <LinearLayout
+            style="@style/DetailPanelRowItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ru.profi1c.engine.widget.FieldTextView
+                android:id="@+id/tvAddress"
+                app:readOnly="true"
+                style="@style/DetailPanelRowItemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvLocation"
+                style="@style/DetailPanelRowItemSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trViewPhone"
+        style="@style/DetailPanelSingleRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            style="@style/DetailPanelFirstAction"
+            android:src="@mipmap/ic_detail_fa_phone"/>
+
+        <ru.profi1c.engine.widget.FieldTextView
+            android:id="@+id/tvPhone"
+            app:readOnly="true"
+            style="@style/DetailPanelRowItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autoLink="phone"
+            android:text="8 (910) 209-01-01"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trViewSite"
+        style="@style/DetailPanelSingleRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            style="@style/DetailPanelFirstAction"
+            android:src="@mipmap/ic_detail_fa_link"/>
+
+        <ru.profi1c.engine.widget.FieldTextView
+            app:readOnly="true"
+            android:id="@+id/tvSite"
+            style="@style/DetailPanelRowItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:autoLink="web"
+            android:text="http://www.pizza-mama.ru/"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trViewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:background="@drawable/detail_list_divider"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trViewStatus"
+        style="@style/DetailPanelTwoRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            style="@style/DetailPanelRowItemNoFirstAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_span="2"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/DetailPanelRowItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_status"/>
+
+            <ru.profi1c.engine.widget.FieldTextView
+                app:readOnly="true"
+                android:id="@+id/tvStatus"
+                style="@style/DetailPanelRowItemSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Временно закрыта"/>
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trViewComment"
+        style="@style/DetailPanelTwoRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/DetailPanelRowItemNoFirstAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_span="2"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/DetailPanelRowItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_comment"/>
+
+            <ru.profi1c.engine.widget.FieldTextView
+                app:readOnly="true"
+                android:id="@+id/tvComment"
+                style="@style/DetailPanelRowItemSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Произвольный текстовый коммнетарий"/>
+
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

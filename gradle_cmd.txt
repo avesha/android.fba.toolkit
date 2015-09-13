@@ -1,0 +1,17 @@
+# Пересобрать все (включая выполнение тестов java)
+gradle clean build
+
+#Выполнить тесты Android и посчитать покрытие. 
+#Эмулятор должен быть запущен, некоторые тесты (Test00JSONProvider, Test01ExchangeManager выполняются продолжительное время > 5 мин). Результаты:
+#тесты: d:\git\fba\android.fba.toolkit\engine\build\outputs\androidTest-results\connected\
+#отчет о покрытии кода: ..\engine\build\reports\coverage\debug\index.html
+gradle createDebugCoverageReport
+
+#Пересобрать один проект
+gradle samples:fba_sample7_sensus:clean assembleRelease
+
+#Создать дистрибутив (включая исходные коды и документацию) и установить его в локальный репозиторий (как правило, \<User>\.m2\repository)
+gradle install
+
+#Опубликовать новую публичную версию
+gradle bintrayUpload

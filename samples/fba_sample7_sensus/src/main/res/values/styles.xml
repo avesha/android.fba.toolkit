@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppCompatAlertDialogStyle" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
+    </style>
+
+    <style name="AppCompatDialogStyle" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="floating_action_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="elevation">4dp</item>
+        <item name="pressedTranslationZ">8dp</item>
+    </style>
+
+    <style name="DetailPanelContent">
+        <item name="android:paddingTop">36dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">36dp</item>
+    </style>
+
+    <style name="DetailPanelTwoRow">
+        <item name="android:minHeight">72dp</item>
+    </style>
+
+    <style name="DetailPanelSingleRow">
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="DetailPanelRowItem">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="DetailPanelFirstAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="DetailPanelRowItemTitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="DetailPanelRowItemSubTitle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="DetailPanelRowItemNoFirstAction">
+        <item name="android:layout_marginLeft">48dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="DetailPanelEditRowItemHint">
+        <item name="android:textColorHint">@color/primary_dark</item>
+    </style>
+
+    <style name="DetailPanelEditFirstAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="SalesPointTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/tab_max_width</item>
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabTextAppearance">@style/SalesPointTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="SalesPointTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary_light</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="SalesPointPageContent">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@color/cardview_light_background</item>
+    </style>
+
+    <style name="SalesPointPageInfoContent">
+        <item name="android:paddingTop">36dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">36dp</item>
+    </style>
+
+    <style name="EmptyCommentTextView">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/empty_hint</item>
+    </style>
+
+    <style name="DetailPanelRowItemSubTitle.WizardLocation">
+        <item name="android:layout_marginLeft">52dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+</resources>

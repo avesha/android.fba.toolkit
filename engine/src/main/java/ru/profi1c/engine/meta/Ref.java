@@ -23,8 +23,8 @@ public abstract class Ref extends Row implements IMetadata {
      */
     public static final String FIELD_NAME_REF = "_id";
 
-    public static final String FIELD_NAME_DELETIONMARK = "DeletionMark";
-    public static final String FIELD_NAME_NEW_ITEM = "NewItem";
+    public static final String FIELD_NAME_DELETIONMARK = "deletionMark";
+    public static final String FIELD_NAME_NEW_ITEM = "newItem";
     public static final String FIELD_NAME_TABLE_PART_DATA = "mapTablePartData";
 
     /**

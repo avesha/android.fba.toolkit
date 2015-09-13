@@ -22,7 +22,7 @@ public abstract class Table extends Row {
      * Содержит уникальный ключ записи (составной по измерениям)
      */
     @DatabaseField(columnName = Table.FIELD_NAME_ID, id = true)
-    @MetadataField(type = MetadataFieldType.STRING, name = "recordKey", description = Const.META_DESCRIPTION_RECORD_KEY)
+    @MetadataField(type = MetadataFieldType.STRING, name = Table.FILED_NAME_RECORD_KEY, description = Const.META_DESCRIPTION_RECORD_KEY)
     protected String recordKey;
     // имя "recordKey" не менять, используется в парсере как исключаемое
 

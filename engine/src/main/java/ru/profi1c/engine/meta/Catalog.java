@@ -15,14 +15,14 @@ public abstract class Catalog extends Ref implements IPresentation, Comparable<C
     /**
      * Имя поля для ссылки на владельца элемента справочника.
      */
-    public static final String FIELD_NAME_OWNER = "Owner";
+    public static final String FIELD_NAME_OWNER = "owner";
 
-    public static final String FIELD_NAME_CODE = "Code";
-    public static final String FIELD_NAME_DESCRIPTION = "Description";
-    public static final String FIELD_NAME_FOLDER = "Folder";
-    public static final String FIELD_NAME_PREDEFINED = "Predefined";
-    public static final String FIELD_NAME_PARENT = "Parent";
-    public static final String FIELD_NAME_LEVEL = "Level";
+    public static final String FIELD_NAME_CODE = "code";
+    public static final String FIELD_NAME_DESCRIPTION = "description";
+    public static final String FIELD_NAME_FOLDER = "folder";
+    public static final String FIELD_NAME_PREDEFINED = "predefined";
+    public static final String FIELD_NAME_PARENT = "parent";
+    public static final String FIELD_NAME_LEVEL = "level";
 
     /**
      * Содержит код элемента справочника, всегда только строковый

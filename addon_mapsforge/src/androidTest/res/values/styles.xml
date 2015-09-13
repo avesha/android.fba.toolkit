@@ -1,0 +1,18 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.Fba"/>
+    <style name="AppBaseTheme.Light" parent="@style/Theme.Fba.Light"/>
+	
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme.Light">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.Dialog" parent="@style/Theme.Fba.Dialog" />
+
+</resources>

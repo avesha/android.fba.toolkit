@@ -23,7 +23,7 @@ public abstract class Row extends Observable implements Serializable {
      */
     public static final int ID_OBSERVER_NOTIFY = 750804;
 
-    public static final String FIELD_NAME_MODIFIED = "Modified";
+    public static final String FIELD_NAME_MODIFIED = "modified";
 
     /**
      * Признак изменения строки

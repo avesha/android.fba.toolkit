@@ -54,6 +54,11 @@ public final class Const {
     public static final String DEFAULT_EXCHANGE_DAYS_INDEX = "2,3,4,5,6";
 
     /**
+     * Идентификатор уведомления, которое будет создано при запуске сервиса обмена
+     */
+    public static int NOTIFICATION_ID_EXCHANGE_FOREGROUND = 7226;
+
+    /**
      * Идентификатор уведомления, которое будет создано при получении новой
      * версии приложение
      */

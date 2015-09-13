@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    style="@style/DetailPanelContent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="0"
+    android:stretchColumns="1">
+
+    <include layout="@layout/sales_point_desc_layout"/>
+
+    <include layout="@layout/sales_point_address_layout"/>
+
+    <include layout="@layout/sales_point_phone_layout"/>
+
+    <include layout="@layout/sales_point_site_layout"/>
+
+    <include layout="@layout/sales_point_status_layout"/>
+
+    <include layout="@layout/sales_point_comment_layout"/>
+
+</TableLayout>
+
+

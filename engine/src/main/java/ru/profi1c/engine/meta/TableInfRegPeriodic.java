@@ -17,7 +17,7 @@ public abstract class TableInfRegPeriodic extends TableInfReg {
     /**
      * Имя поля 'Период'.
      */
-    public static final String FIELD_NAME_PERIOD = "Period";
+    public static final String FIELD_NAME_PERIOD = "period";
 
     /**
      * Содержит период, к которому относится запись регистра. Только для

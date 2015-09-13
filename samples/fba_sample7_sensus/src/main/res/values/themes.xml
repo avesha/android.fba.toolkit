@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBaseTheme" parent="@style/Theme.Fba" />
+    <style name="AppBaseTheme.Light" parent="@style/Theme.Fba.Light" />
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme.Light">
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+        <item name="dialogTheme">@style/AppCompatDialogStyle</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomFullScreenTheme" parent="@style/Theme.Fba.Light.NoActionBar.FullScreen">
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@style/Theme.Fba.Light.Dialog">
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+    </style>
+
+</resources>

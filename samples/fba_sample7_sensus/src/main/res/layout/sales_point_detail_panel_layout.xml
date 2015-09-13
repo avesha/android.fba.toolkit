@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.profi1c.engine.widget.ObjectView
+    android:id="@+id/ovSalesPoint"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ViewSwitcher
+        android:id="@+id/vsSalesPointViewMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/sales_point_view_layout"/>
+        <include layout="@layout/sales_point_edit_layout"/>
+    </ViewSwitcher>
+
+</ru.profi1c.engine.widget.ObjectView>

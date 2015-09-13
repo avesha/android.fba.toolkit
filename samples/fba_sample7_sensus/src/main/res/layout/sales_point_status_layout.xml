@@ -1,0 +1,35 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:id="@+id/trStatus"
+        style="@style/DetailPanelTwoRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/DetailPanelRowItemNoFirstAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="4dp"
+                android:text="@string/hint_status"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/abc_text_size_caption_material"/>
+
+            <ru.profi1c.engine.widget.FieldAppCompatSpinner
+                android:id="@+id/spinStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+        </LinearLayout>
+
+    </TableRow>
+
+</merge>

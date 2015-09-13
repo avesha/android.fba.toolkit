@@ -18,6 +18,21 @@ import ru.profi1c.engine.R;
  */
 public final class NotificationHelper {
 
+    public static Notification getExchangeForegroundNotification(Context context, int id) {
+
+        final String tickerText = context.getString(R.string.fba_exchange_build);
+        Bitmap bmp = BitmapFactory.decodeResource(context.getResources(), R.mipmap.fba_web_service);
+
+        // collapse up notification bar
+        Intent i = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+        PendingIntent pi = PendingIntent.getService(context, 0, i, 0);
+
+        return buildNotification(context, id, android.R.drawable.stat_notify_sync, bmp, tickerText,
+                                 tickerText, Color.GREEN, null, pi);
+
+    }
+
+
     /**
      * Показать уведомление о получении новой версии приложения
      *
@@ -98,6 +113,20 @@ public final class NotificationHelper {
             Bitmap bmpLargeIcon, String tickerText, String contentText, int ledColor, Uri sound,
             PendingIntent pendingIntent) {
 
+        Notification notification =
+                buildNotification(context, idNotification, idResIconTray, bmpLargeIcon, tickerText,
+                                  contentText, ledColor, sound, pendingIntent);
+
+        NotificationManager notificationManager =
+                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.notify(idNotification, notification);
+
+    }
+
+    private static Notification buildNotification(Context context, int idNotification,
+            int idResIconTray, Bitmap bmpLargeIcon, String tickerText, String contentText,
+            int ledColor, Uri sound, PendingIntent pendingIntent) {
+
         String contentTitle = context.getString(R.string.app_name);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
@@ -133,10 +162,7 @@ public final class NotificationHelper {
             notification.defaults |= Notification.DEFAULT_SOUND;
         }
 
-        NotificationManager notificationManager =
-                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(idNotification, notification);
-
+        return notification;
     }
 
     private NotificationHelper() {

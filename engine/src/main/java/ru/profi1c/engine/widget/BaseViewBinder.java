@@ -15,7 +15,6 @@ import ru.profi1c.engine.meta.DBOpenHelper;
 import ru.profi1c.engine.meta.IPresentation;
 import ru.profi1c.engine.meta.MetadataHelper;
 import ru.profi1c.engine.meta.ValueStorage;
-import ru.profi1c.engine.widget.FieldPresentationSpinner.CacheAdapterRequest;
 
 /**
  * Базовый класс для построения отображения дочерних View (как связанных с
@@ -108,7 +107,7 @@ public abstract class BaseViewBinder {
             // объект может быть не задан
             ((IFieldView) v).build(obj, field, fieldValue, mFormatter);
 
-        } else if (v instanceof FieldPresentationSpinner) {
+        } else if (v instanceof IFieldPresentationSpinner) {
 
             // объект обязателен
             if (obj == null) {
@@ -116,7 +115,7 @@ public abstract class BaseViewBinder {
                         "For 'FieldPresentationSpinner' widget is required the object!");
             }
 
-            FieldPresentationSpinner fpSpin = (FieldPresentationSpinner) v;
+            IFieldPresentationSpinner fpSpin = (IFieldPresentationSpinner) v;
             fpSpin.setCacheAdapter(mCacheAdapterRequest);
             fpSpin.setSelectRequest(true);
             fpSpin.setAutoPrompt(mChildSpinAutoPrompt);
@@ -135,8 +134,8 @@ public abstract class BaseViewBinder {
     /*
      * кеширование адаптеров
      */
-    private FieldPresentationSpinner.CacheAdapterRequest mCacheAdapterRequest =
-            new CacheAdapterRequest() {
+    private SpinnerAdapterRequest mCacheAdapterRequest =
+            new SpinnerAdapterRequest() {
 
                 @Override
                 public SpinnerAdapter getCachedAdapter(Class<?> classOfValues) {

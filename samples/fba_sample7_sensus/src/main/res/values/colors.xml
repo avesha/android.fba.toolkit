@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#FFC107</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="primary_text_light">@android:color/white</color>
+    <color name="secondary_text_light">@color/md_blue_50</color>
+
+    <color name="icons">@android:color/white</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="color_red">#bc0a29</color>
+    <color name="color_green">#5cbf14</color>
+    <color name="color_blue">@color/primary</color>
+    <color name="color_gray">@color/secondary_text</color>
+
+    <color name="empty_hint">#d6dae0</color>
+    <color name="task_high_importance">@color/primary_dark</color>
+    <color name="task_midle_importance">@color/color_green</color>
+
+    <color name="translucent_scrim_top">#26000000</color>
+    <color name="translucent_scrim_top_center">#0C000000</color>
+    <color name="translucent_scrim_bottom">#2A000000</color>
+    <color name="translucent_scrim_bottom_center">#0D000000</color>
+</resources>

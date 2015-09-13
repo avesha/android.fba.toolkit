@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--This text is generated automatically, do not delete it. 'FBA Toolkit', www.profi1c.ru-->
+	<string name="app_name">"Cенсус территории"</string>
+	<string name="app_package">"ru.profi1c.samples.sensus"</string>
+	<string name="app_id">"SAMPLE_SENSUS_TERRITORY"</string>
+	<string name="app_descr">"Демонстрационное приложение для корпоративной системы предварительных продаж на базе 1С (конфигурация «FBA – демо»)"</string>
+	<string name="feedback_author">"ООО "Мобильные решения""</string>
+	<string name="feedback_tel">"+7(985) 815-4005"</string>
+	<string name="feedback_email">"support@profi1c.ru"</string>
+	<string name="feedback_copyright"></string>
+	<string name="fba_ws_server">"10.0.2.2"</string>
+	<string name="fba_ws_service_name">"fbaService.1cws"</string>
+	<string name="fba_ws_app_namespace">"FbaDemo83/ws"</string>
+
+    <string name="nav_mock_account_name">Гадя Петрович Хренова</string>
+    <string name="nav_mock_account_mail">gadya.hrenova@test.ru</string>
+
+	<string name="nav_drawer_item_salespoints">Торговые точки</string>
+	<string name="nav_drawer_item_location">Объекты на карте</string>
+	<string name="nav_drawer_item_tasks">Задачи</string>
+	<string name="nav_drawer_item_task">Задача</string>
+	<string name="nav_drawer_item_settings">Настройки</string>
+	<string name="nav_drawer_item_help">Справка</string>
+	<string name="nav_drawer_item_exchange">Обмен с сервером</string>
+
+	<string name="title_sales_point">Торговая точка</string>
+
+	<string name="exchange_select_variant">Выбор варианта обмена</string>
+	<string name="exchange_mock_user_name">Пользователь</string>
+
+	<string name="empty_tasks_description">Список задач для торгового представителя пуст. Выполните обмен с сервером</string>
+    <string name="empty_salepoint_description">Список торговых точек не загружен. Выполните обмен с сервером</string>
+	
+	<string name="action_select_date">На дату</string>
+	<string name="action_switch_map_style">Вид</string>
+	<string name="action_switch_style">@string/action_switch_map_style</string>
+	<string name="action_switch_mode">Изменить</string>
+	<string name="action_save">Сохранить</string>
+	<string name="action_refresh_location">Обновить координаты</string>
+
+	<string name="task_importance">Важность</string>
+	<string name="task_date_begin">Дата начала</string>
+	<string name="task_date_completed">Дата завершения</string>
+	<string name="task_in_work">В работе</string>
+	<string name="task_completed">Выполнена</string>
+	<string name="task_in_calendar">В календарь</string>
+
+	<string name="hint_address">Адрес</string>
+	<string name="hint_description">Наименование</string>
+	<string name="hint_phone">Телефон</string>
+	<string name="hint_site">Сайт</string>
+	<string name="hint_status">Статус</string>
+	<string name="hint_comment">Комментарий</string>
+	<string name="hint_location_frm" formatted = "false">координаты: ш. %.4f д. %.4f</string>
+
+	<string name="default_location_lat">52.966667</string>
+	<string name="default_location_lng">36.083333</string>
+
+	<string name="msg_not_support_google_maps">Google Maps не поддерживается на вашем устройстве!</string>
+	<string name="msg_prompt_save_changes">Объект изменен, сохранить внесенные изменения?</string>
+	<string name="msg_cannot_select_photo">Не удалось выбрать фото</string>
+	<string name="msg_not_found_app_make_photo">Не найдено приложение для создания фото!</string>
+
+	<string name="title_add_sales_point">Добавление торговой точки</string>
+	<string name="help_to_create_sales_point">Прежде чем приступить с заполнению основных реквизитов торговой точки, вам необходимо сделать основное фото. Параллельно будет запущен процесс определения текущих координат.</string>
+	<string name="dont_remind_me_later">Не напоминать больше</string>
+
+	<string name="transition_sales_point_photo">SalesPointPhotoTransition</string>
+
+	<string name="page_photo_title">Фото</string>
+	<string name="page_location_title">Адрес</string>
+	<string name="page_info_title">Инфо</string>
+    <string name="msg_confirm_add_sales_point">Добавить новую торговую точку? Информация будет передана на сервер 1С в следующем сеансе обмена</string>
+
+	<string name="err_description_is_empty">Не заполнено наименование</string>
+	<string name="err_address_is_empty">Не указан адрес</string>
+
+
+</resources>

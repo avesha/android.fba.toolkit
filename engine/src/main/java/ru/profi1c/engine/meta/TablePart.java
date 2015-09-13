@@ -11,7 +11,7 @@ import ru.profi1c.engine.Const;
 public abstract class TablePart extends Table implements IMetadata {
     private static final long serialVersionUID = 6394976549670838025L;
 
-    public static final String FIELD_NAME_REF_ID = "RefId";
+    public static final String FIELD_NAME_REF_ID = "refId";
     public static final String FIELD_NAME_LINE_NUMBER = "lineNumber";
 
     /**

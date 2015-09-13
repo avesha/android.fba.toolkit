@@ -22,7 +22,7 @@ import ru.profi1c.engine.util.IOHelper;
 public final class ValueStorage implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    public static final String FIELD_NAME_RECORD_KEY = "RecordKey";
+    public static final String FIELD_NAME_RECORD_KEY = "recordKey";
 
     public byte[] data;
 

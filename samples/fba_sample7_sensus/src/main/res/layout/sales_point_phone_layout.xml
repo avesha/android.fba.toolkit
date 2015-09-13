@@ -1,0 +1,31 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:id="@+id/trPhone"
+        style="@style/DetailPanelSingleRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            style="@style/DetailPanelEditFirstAction"
+            android:src="@mipmap/ic_detail_fa_phone"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPhone"
+            style="@style/DetailPanelRowItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2">
+
+            <ru.profi1c.engine.widget.FieldEditText
+                android:id="@+id/etPhone"
+                style="@style/DetailPanelEditRowItemHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone"
+                android:inputType="phone"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </TableRow>
+
+</merge>

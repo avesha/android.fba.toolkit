@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!--This text is generated automatically, do not delete it. 'FBA Toolkit', www.profi1c.ru-->
+	<string name="app_name">"Замер производительности FBA"</string>
+	<string name="app_package">"ru.profi1c.samples.fba_perfomance"</string>
+	<string name="app_id">"FBA_PERFOMANCE_APP"</string>
+	<string name="app_descr">"Замер производительности FBA"</string>
+	<string name="feedback_author">"ООО “Мобильные решения”"</string>
+	<string name="feedback_tel">"+7(985) 815-4005"</string>
+	<string name="feedback_email">"support@profi1c.ru"</string>
+	<string name="feedback_copyright">"©2013 ООО "Мобильные решения" - Все права защищены."</string>
+	<string name="fba_ws_server">"10.0.2.2"</string>
+	<string name="fba_ws_service_name">"fbaService.1cws"</string>
+	<string name="fba_ws_app_namespace">"FbaPerformance/ws"</string>
+
+	<string name="perf_comment">Замер производительности движка «FBA Toolkit” для сравнения со штатной мобильной платформой от 1С (данные замеров для сравнения http://catalog.mista.ru/public/238799/)</string>
+	<string name="perf_select_option">Выберите вариант замера:</string>
+	<string name="perf_run_test">Запустить тест</string>
+	<string name="perf_test_result">Результаты теста:</string>
+	<string name="perf_optimization_on">Включить оптимизацию</string>
+	<string name="perf_backup_db">Архив БД</string>
+
+</resources>

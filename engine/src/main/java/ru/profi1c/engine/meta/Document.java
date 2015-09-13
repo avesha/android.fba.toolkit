@@ -14,9 +14,9 @@ import ru.profi1c.engine.util.DateHelper;
 public abstract class Document extends Ref implements IPresentation, Comparable<Document> {
     private static final long serialVersionUID = 2842751140625776249L;
 
-    public static final String FIELD_NAME_DATE = "Date";
-    public static final String FIELD_NAME_NUMBER = "Number";
-    public static final String FIELD_NAME_POSTED = "Posted";
+    public static final String FIELD_NAME_DATE = "date";
+    public static final String FIELD_NAME_NUMBER = "number";
+    public static final String FIELD_NAME_POSTED = "posted";
 
     /**
      * Содержит дату и время документа.

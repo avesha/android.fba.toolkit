@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="FbaFieldView">
+        <attr name="readOnly" format="boolean" />
+    </declare-styleable>
+
     <!-- Default login button style. -->
     <attr name="lightButtonStyle" format="reference" />
     <attr name="simpleListHeaderStyle" format="reference" />

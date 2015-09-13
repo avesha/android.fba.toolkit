@@ -17,7 +17,7 @@ public abstract class TableInfReg extends Table implements IMetadata {
     /**
      * Имя поля 'Регистратор'.
      */
-    public static final String FIELD_NAME_RECORDER = "Recorder";
+    public static final String FIELD_NAME_RECORDER = "recorder";
 
     /**
      * Содержит регистратор, который занес данную запись регистра сведений. Для

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="random_colors">
+        <item>@color/primary</item>
+        <item>@color/primary_dark</item>
+        <item>@color/empty_hint</item>
+        <item>@color/accent_material_dark</item>
+        <item>@color/accent_material_light</item>
+        <item>@color/color_red</item>
+        <item>@color/color_green</item>
+    </array>
+</resources>

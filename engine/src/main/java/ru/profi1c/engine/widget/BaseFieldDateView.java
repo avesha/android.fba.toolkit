@@ -26,7 +26,7 @@ import ru.profi1c.engine.FbaRuntimeException;
 import ru.profi1c.engine.meta.MetadataHelper;
 import ru.profi1c.engine.meta.Row;
 
-public abstract class BaseFieldDateView extends TextView implements IFieldView, Observer {
+public abstract class BaseFieldDateView extends TextView implements IFieldView, IReadOnlyFieldView, Observer {
 
     private static final String DATE_FORMAT = Const.DEFAULT_WIDGET_DATE_FORMAT;
     private static final String TIME_FORMAT = Const.DEFAULT_WIDGET_TIME_FORMAT;
@@ -47,24 +47,27 @@ public abstract class BaseFieldDateView extends TextView implements IFieldView, 
     private boolean mBuilded;
     private OnClickListener mCustomOnClickListener;
 
+    private boolean mReadOnly;
+
     public BaseFieldDateView(Context context) {
         super(context);
-        init();
+        init(null);
     }
 
     public BaseFieldDateView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(attrs);
     }
 
     public BaseFieldDateView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        init();
+        init(attrs);
     }
 
-    private void init() {
+    private void init(AttributeSet attrs) {
         if (!isInEditMode()) {
             super.setOnClickListener(mDefOnClickListener);
+            mReadOnly = StyleableAttrHelper.readReadOnlyAttribute(getContext(), attrs);
             mDlgHelper = new DatePickerDialogHelper(getContext());
         }
     }
@@ -195,7 +198,7 @@ public abstract class BaseFieldDateView extends TextView implements IFieldView, 
 
         @Override
         public void onClick(View v) {
-            if (mBuilded) {
+            if (mBuilded && !mReadOnly) {
                 if (getPickerType() == DatePart.DATE) {
                     mDlgHelper.showDatePickerDialog(mFieldValue, mDataChangeListener);
                 } else {
@@ -297,6 +300,16 @@ public abstract class BaseFieldDateView extends TextView implements IFieldView, 
 
         }
 
+    }
+
+    @Override
+    public boolean isReadOnly() {
+        return mReadOnly;
+    }
+
+    @Override
+    public void setReadOnly(boolean readOnly) {
+        mReadOnly = readOnly;
     }
 
     /*

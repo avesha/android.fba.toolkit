@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import ru.profi1c.engine.Const;
+import ru.profi1c.engine.meta.IPresentation;
 import ru.profi1c.engine.meta.MetadataHelper;
 import ru.profi1c.engine.util.DateHelper;
 
@@ -135,7 +136,11 @@ public class FieldFormatter {
                 } else {
                     return getDateTimeFormat().format(arg);
                 }
+
+            } else if(arg instanceof IPresentation) {
+                return ((IPresentation) arg).getPresentation();
             }
+
             return arg.toString();
         }
 

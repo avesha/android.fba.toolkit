@@ -30,10 +30,17 @@
 # platform version.  We know about them, and they are safe.
 -dontwarn android.support.**
 -dontwarn **CompatHoneycomb
+
+# support-v4
+-dontwarn android.support.v4.**
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+
+# support-v7
+-dontwarn android.support.v7.**
 -keep class android.support.v7.** { *; }
--keep interface android.support.v7.** { *; }
--keep class android.support.v4.** { *; }
--keep public class * extends android.support.v4.app.Fragment
+-keep class android.support.v7.internal.** { *; }
+-keep interface android.support.v7.internal.** { *; }
 
 #==========================================================================
 # apache IO
@@ -74,13 +81,17 @@
 }
 -keep public class * extends com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper
 
+-dontwarn javax.persistence.**
+-dontwarn org.slf4j.**
+
 #==========================================================================
 # ru_profi1c_engine specific
 
 #database
--keep class ru.profi1c.engine.meta.DBOpenHelper{
-	public <init>(android.content.Context);
+-keep class * extends ru.profi1c.engine.meta.**{
+	public <init>(...);
 }
+
 -keep class * extends ru.profi1c.engine.meta.Row {
 	<fields>;
 }
@@ -90,3 +101,7 @@
 
 #ofter
 -keep public class * extends ru.profi1c.engine.FbaRuntimeException { public *; }
+
+-keep class org.xmlpull.v1**  { *; }
+-dontwarn org.xmlpull.v1.**
+

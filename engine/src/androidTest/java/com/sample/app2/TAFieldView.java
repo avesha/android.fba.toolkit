@@ -26,8 +26,8 @@ import ru.profi1c.engine.widget.FieldDateView;
 import ru.profi1c.engine.widget.FieldEditText;
 import ru.profi1c.engine.widget.FieldFormatter;
 import ru.profi1c.engine.widget.FieldPresentationSpinner;
-import ru.profi1c.engine.widget.FieldPresentationSpinner.CacheAdapterRequest;
 import ru.profi1c.engine.widget.FieldTimeView;
+import ru.profi1c.engine.widget.SpinnerAdapterRequest;
 
 public class TAFieldView extends FbaDBActivity {
     private static final String TAG = TAFieldView.class.getSimpleName();
@@ -217,7 +217,7 @@ public class TAFieldView extends FbaDBActivity {
     /*
    * кеширование адаптеров
    */
-    FieldPresentationSpinner.CacheAdapterRequest mCacheAdapterRequest = new CacheAdapterRequest() {
+    SpinnerAdapterRequest mCacheAdapterRequest = new SpinnerAdapterRequest() {
 
         @Override
         public SpinnerAdapter getCachedAdapter(Class<?> classOfValues) {
@@ -225,8 +225,8 @@ public class TAFieldView extends FbaDBActivity {
         }
 
         @Override
-        public void onNewAdapter(Class<?> classOfValues, SpinnerAdapter adaper) {
-            mCacheAdapters.put(classOfValues, adaper);
+        public void onNewAdapter(Class<?> classOfValues, SpinnerAdapter adapter) {
+            mCacheAdapters.put(classOfValues, adapter);
         }
 
     };

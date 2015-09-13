@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/fba_base_vspacing"
+    android:paddingLeft="@dimen/fba_base_hspacing"
+    android:paddingRight="@dimen/fba_base_hspacing"
+    android:paddingTop="@dimen/fba_base_vspacing">
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvSalesPoint"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tvSalesPoint"
+        android:paddingBottom="4dp"
+        android:paddingRight="4dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/primary_text"/>
+
+    <TextView
+        android:id="@+id/tvSalesPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvDesc"
+        android:layout_toLeftOf="@+id/tvDateBegin"
+        android:paddingRight="3dp"
+        android:textColor="@color/secondary_text"/>
+
+    <TextView
+        android:id="@+id/tvDateBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/color_red"
+        android:padding="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.profi1c.engine.widget.ObjectView
+    android:id="@id/fba_object_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/fba_base_vspacing"
+    android:paddingRight="@dimen/fba_base_vspacing">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fba_cardview_vspacing"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/fba_cardview_radius"
+        app:cardUseCompatPadding="true"
+        app:elevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sales_point_photo_preview_height"
+                android:background="@color/primary_dark"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_shopping_cart_white"
+                android:transitionName="@string/transition_sales_point_photo"/>
+
+            <TextView
+                android:id="@+id/tvDescription"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fba_cardview_vspacing"
+                android:layout_marginLeft="@dimen/fba_base_hspacing"
+                android:layout_marginRight="@dimen/fba_base_hspacing"
+                android:layout_marginTop="@dimen/base_cardview_padding"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fba_base_hspacing"
+                android:layout_marginLeft="@dimen/fba_base_hspacing"
+                android:layout_marginRight="@dimen/fba_base_hspacing"
+                android:textColor="@color/secondary_text"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</ru.profi1c.engine.widget.ObjectView>

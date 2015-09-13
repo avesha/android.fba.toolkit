@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="90dp"
+        android:layout_height="76dp"
+        android:background="@drawable/image_bgr"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="visible"
+        android:transitionName="@string/transition_sales_point_photo"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:gravity="center_horizontal"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDescription"
+        android:layout_below="@+id/tvDescription"
+        android:layout_marginTop="5dp"
+        android:maxWidth="240dp"
+        android:paddingBottom="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/secondary_text"
+        android:autoLink="phone|email|web"/>
+
+</RelativeLayout>

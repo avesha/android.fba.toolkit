@@ -1,0 +1,25 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:id="@+id/trComment"
+        style="@style/DetailPanelTwoRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilComment"
+            style="@style/DetailPanelRowItemNoFirstAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2">
+
+            <ru.profi1c.engine.widget.FieldEditText
+                android:id="@+id/etComment"
+                style="@style/DetailPanelEditRowItemHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_comment"
+                android:inputType="text|textMultiLine"/>
+        </android.support.design.widget.TextInputLayout>
+    </TableRow>
+</merge>

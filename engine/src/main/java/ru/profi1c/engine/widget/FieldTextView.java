@@ -1,6 +1,7 @@
 package ru.profi1c.engine.widget;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Message;
 import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
@@ -16,6 +17,9 @@ import java.util.Observer;
 
 import ru.profi1c.engine.Dbg;
 import ru.profi1c.engine.FbaRuntimeException;
+import ru.profi1c.engine.R;
+import ru.profi1c.engine.app.FbaApplication;
+import ru.profi1c.engine.meta.IPresentation;
 import ru.profi1c.engine.meta.MetadataHelper;
 import ru.profi1c.engine.meta.Row;
 import ru.profi1c.engine.util.InputDialogHelper;
@@ -28,7 +32,7 @@ import ru.profi1c.engine.util.InputDialogHelper;
  * Форматирование значения производится на основании типа данных реквизита
  * </p>
  */
-public class FieldTextView extends TextView implements IFieldView, Observer {
+public class FieldTextView extends TextView implements IFieldView, IReadOnlyFieldView, Observer {
 
     private WeakReference<Object> mReferenceObj;
     private WeakReference<AlertDialog> mReferenceDlg;
@@ -39,24 +43,26 @@ public class FieldTextView extends TextView implements IFieldView, Observer {
 
     private boolean mBuilded;
     private OnClickListener mCustomOnClickListener;
+    private boolean mReadOnly;
 
     public FieldTextView(Context context) {
         super(context);
-        init();
+        init(null);
     }
 
     public FieldTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(attrs);
     }
 
     public FieldTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        init();
+        init(attrs);
     }
 
-    private void init() {
+    private void init(AttributeSet attrs) {
         if (!isInEditMode()) {
+            mReadOnly = StyleableAttrHelper.readReadOnlyAttribute(getContext(), attrs);
             super.setOnClickListener(mDefOnClickListener);
         }
     }
@@ -68,7 +74,7 @@ public class FieldTextView extends TextView implements IFieldView, Observer {
 
         @Override
         public void onClick(View v) {
-            if (mBuilded) {
+            if (mBuilded && !mReadOnly) {
                 onShowInputDialog();
             }
             if (mCustomOnClickListener != null) {
@@ -111,7 +117,7 @@ public class FieldTextView extends TextView implements IFieldView, Observer {
         }
 
         Class<?> classOfF = mField.getType();
-        AlertDialog dlg;
+        AlertDialog dlg = null;
 
         if (MetadataHelper.isIntegerClass(classOfF) ) {
 
@@ -133,9 +139,12 @@ public class FieldTextView extends TextView implements IFieldView, Observer {
 
         } else if(MetadataHelper.isFloatClass(classOfF)) {
 
-            dlg = InputDialogHelper.inputDouble(getContext(), mDialogTitle, dlgHint,
-                    ((mFieldValue != null) ? ((Float) mFieldValue).doubleValue() : 0),
-                    mOnInputListener);
+            dlg = InputDialogHelper.inputDouble(getContext(), mDialogTitle, dlgHint, ((mFieldValue != null) ? ((Float) mFieldValue)
+                                                        .doubleValue() : 0), mOnInputListener);
+
+        } else if(classOfF.isEnum() && IPresentation.class.isAssignableFrom(classOfF)) {
+
+            inputEnum((Class<Enum>) classOfF);
 
         } else {
 
@@ -164,6 +173,32 @@ public class FieldTextView extends TextView implements IFieldView, Observer {
             formatValue();
         }
     };
+
+    private void inputEnum(Class<Enum> classOfF) {
+        final Context context = getContext();
+        FbaApplication app = FbaApplication.from(context);
+        int idResIcon = app.getFbaSettingsProvider().getAppSettings().getIdResIconLauncher();
+        if (idResIcon == 0) {
+            idResIcon = R.mipmap.fba_ic_launcher;
+        }
+
+        IPresentation[] enumValues = (IPresentation[]) classOfF.getEnumConstants();
+        final PresentationAdapter adapter = new PresentationAdapter(context, android.R.layout.select_dialog_item, enumValues);
+
+        AlertDialog.Builder b = new AlertDialog.Builder(context);
+        b.setTitle(mDialogTitle);
+        b.setIcon(idResIcon);
+        b.setAdapter(adapter, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int position) {
+                if (adapter != null) {
+                    setObjectFieldValue(adapter.getItem(position));
+                    formatValue();
+                }
+            }
+        });
+        b.create().show();
+    }
 
     @Override
     public void update(Observable observable, Object data) {
@@ -312,4 +347,13 @@ public class FieldTextView extends TextView implements IFieldView, Observer {
         setText(frmValue);
     }
 
+    @Override
+    public boolean isReadOnly() {
+        return mReadOnly;
+    }
+
+    @Override
+    public void setReadOnly(boolean readOnly) {
+        mReadOnly = readOnly;
+    }
 }

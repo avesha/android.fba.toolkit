@@ -1,6 +1,7 @@
 package ru.profi1c.engine.exchange;
 
 import android.app.AlarmManager;
+import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -10,11 +11,13 @@ import android.os.IBinder;
 
 import java.util.Calendar;
 
+import ru.profi1c.engine.Const;
 import ru.profi1c.engine.Dbg;
 import ru.profi1c.engine.app.FbaApplication;
 import ru.profi1c.engine.app.FbaDBIntentService;
 import ru.profi1c.engine.util.DateHelper;
 import ru.profi1c.engine.util.NetHelper;
+import ru.profi1c.engine.util.NotificationHelper;
 
 /**
  * Сервис обмена, выполняет обмен с базой 1С через web-сервис по фиксированным
@@ -23,6 +26,8 @@ import ru.profi1c.engine.util.NetHelper;
 public class ExchangeService extends FbaDBIntentService {
     private static final String TAG = ExchangeService.class.getSimpleName();
     private static final boolean DEBUG = Dbg.DEBUG;
+
+    private static final int NOTIFICATION_ID = Const.NOTIFICATION_ID_EXCHANGE_FOREGROUND;
 
     private static final String EXTRA_VARIANT_ORDINAL = "ex_ordinal";
     private static final String EXTRA_FORCE = "ex_force";
@@ -196,6 +201,11 @@ public class ExchangeService extends FbaDBIntentService {
     }
 
     @Override
+    public Notification getForegroundNotification(int notificationId) {
+        return NotificationHelper.getExchangeForegroundNotification(getApplicationContext(), notificationId);
+    }
+
+    @Override
     public IBinder onBind(Intent intent) {
         super.onBind(intent);
         return mServiceBinder;
@@ -242,16 +252,20 @@ public class ExchangeService extends FbaDBIntentService {
 
     @Override
     public void onDestroy() {
-        super.onDestroy();
         doEndExchange();
+        super.onDestroy();
     }
 
     private void doStartExchange() {
         ResponseHandler.register(getCurrentExchangeObserver());
+        setWakeLock();
+        moveToForeground(NOTIFICATION_ID);
     }
 
     private void doEndExchange() {
         ResponseHandler.unregister(mExchangeObserver);
+        releaseWakeLock();
+        moveToBackground();
     }
 
     /*
