@@ -22,7 +22,7 @@
         android:required="true"/>
 
     <uses-feature
-        android:name="android.hardware.camera2"
+        android:name="android.hardware.camera"
         android:required="true"/>
 
     <application
